@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harini M | Portfolio</title>
+    <!-- Google Fonts: Inter & Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="noise-overlay"></div>
+    </div>
+
+    <!-- Sticky Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">HM<span class="dot">.</span></a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scroll-progress"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="home" class="section hero-section">
+        <div class="hero-content scroll-reveal">
+            <p class="greeting">Hello, I'm</p>
+            <h1 class="hero-title text-gradient">HARINI M</h1>
+            <h2 class="hero-subtitle">
+                I am a <span id="typing-text" class="typing-text"></span><span class="typing-cursor">|</span>
+            </h2>
+            <p class="hero-desc">
+                Passionate about building scalable web applications and developing efficient solutions. Always eager to
+                learn and innovate.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn btn-primary">
+                    View My Work <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    Contact Me
+                </a>
+            </div>
+            <div class="social-links-hero">
+                <a href="https://www.linkedin.com/in/harini-murugesan-06856a330" target="_blank" class="social-icon"
+                    aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/harinimurugesan14" target="_blank" class="social-icon"
+                    aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:harinimurugesan14@gmail.com" class="social-icon" aria-label="Email"><i
+                        class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <!-- About & Education Section -->
+    <section id="about" class="section about-section">
+        <div class="section-container">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="about-content grid-2-col">
+                <div class="about-text glass-card scroll-reveal slide-right">
+                    <h3>Summary</h3>
+                    <p>
+                        BE CSE student with a strong foundation in Java and MERN Stack. I am highly skilled in building
+                        full-stack web applications, learning new technologies quickly, and contributing effectively in
+                        team environments.
+                    </p>
+                    <div class="contact-info-pills mt-4">
+                        <div class="info-pill"><i class="fas fa-map-marker-alt"></i> Madurai, Tamil Nadu</div>
+                        <div class="info-pill"><i class="fas fa-phone"></i> +91 9345304624</div>
+                    </div>
+                </div>
+
+                <div class="education-card glass-card scroll-reveal slide-left">
+                    <h3>Education</h3>
+                    <div class="edu-item">
+                        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="edu-details">
+                            <h4>B.E. Computer Science and Engineering</h4>
+                            <p class="institution">SRM Madurai College for Engineering and Technology</p>
+                            <div class="edu-meta">
+                                <span class="badge">2023 - 2027</span>
+                                <span class="highlight">CGPA: 8.5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="section-container">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title">My Skills</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Languages -->
+                <div class="skill-category glass-card scroll-reveal">
+                    <div class="skill-header">
+                        <i class="fas fa-code skill-icon-main"></i>
+                        <h3>Languages</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li>
+                            <div class="skill-name">
+                                <span><i class="fab fa-java"></i> Java</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 90%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-name">
+                                <span><i class="fab fa-python"></i> Python</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 80%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Full Stack -->
+                <div class="skill-category glass-card scroll-reveal" style="transition-delay: 100ms;">
+                    <div class="skill-header">
+                        <i class="fas fa-laptop-code skill-icon-main"></i>
+                        <h3>MERN Stack</h3>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag"><i class="fas fa-database"></i> MongoDB</span>
+                        <span class="tech-tag"><i class="fas fa-server"></i> Express.js</span>
+                        <span class="tech-tag"><i class="fab fa-react"></i> React.js</span>
+                        <span class="tech-tag"><i class="fab fa-node-js"></i> Node.js</span>
+                        <span class="tech-tag"><i class="fab fa-html5"></i> HTML/CSS</span>
+                        <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category glass-card scroll-reveal" style="transition-delay: 200ms;">
+                    <div class="skill-header">
+                        <i class="fas fa-tools skill-icon-main"></i>
+                        <h3>Tools & Platforms</h3>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag"><i class="fab fa-git-alt"></i> Git</span>
+                        <span class="tech-tag"><i class="fab fa-github"></i> GitHub</span>
+                        <span class="tech-tag"><i class="fas fa-code"></i> VS Code</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="section-container">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title">Internship Experience</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item scroll-reveal slide-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">Dec 2025 – Jan 2026</span>
+                        <h3 class="timeline-title">MERN Stack Intern</h3>
+                        <h4 class="timeline-subtitle">SDLC Madurai</h4>
+                        <p>Developed dynamic web components using React, configured RESTful APIs with Express and
+                            Node.js, and managed data using MongoDB.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item scroll-reveal slide-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">Jun 2025 – Jul 2025</span>
+                        <h3 class="timeline-title">Java Intern / Project Work</h3>
+                        <h4 class="timeline-subtitle">Maxgen Technologies Pvt. Ltd.</h4>
+                        <p>Built backend logic using core Java concepts, implemented object-oriented design patterns,
+                            and participated in active project development.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications under experience -->
+            <div class="certifications-area mt-5">
+                <h3 class="sub-section-title scroll-reveal">Certifications & Activities</h3>
+                <div class="cert-grid scroll-reveal">
+                    <div class="cert-card glass-card hover-lift">
+                        <i class="fas fa-certificate text-gradient"></i>
+                        <p><strong>Infosys Springboard</strong><br>Basics of Business Communication (Apr 2025)</p>
+                    </div>
+                    <div class="cert-card glass-card hover-lift">
+                        <i class="fas fa-robot text-gradient"></i>
+                        <p><strong>Alison</strong><br>Salesforce Developer: Intro to AI</p>
+                    </div>
+                    <div class="cert-card glass-card hover-lift">
+                        <i class="fas fa-code text-gradient"></i>
+                        <p><strong>Infinite Computer Coaching</strong><br>JavaScript Full Stack Development</p>
+                    </div>
+                    <div class="cert-card glass-card hover-lift">
+                        <i class="fas fa-microchip text-gradient"></i>
+                        <p><strong>SRM IST</strong><br>Machine Learning and AI for Electronics Design (Feb 2025)</p>
+                    </div>
+                    <div class="cert-card glass-card hover-lift">
+                        <i class="fas fa-trophy text-gradient"></i>
+                        <p><strong>WEBSPRINT'25</strong><br>Regional Level Hackathon Participant</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="section-container">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card tilt-card scroll-reveal">
+                    <div class="project-content">
+                        <div class="project-icon"><i class="fas fa-users-cog"></i></div>
+                        <h3 class="project-title">Student Management System</h3>
+                        <p class="project-desc">A comprehensive application developed in Java to manage student records,
+                            track attendance, and handle administrative operations efficiently.</p>
+                        <div class="project-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">OOP</span>
+                            <span class="tag">MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card tilt-card scroll-reveal" style="transition-delay: 100ms;">
+                    <div class="project-content">
+                        <div class="project-icon"><i class="fas fa-clipboard-check"></i></div>
+                        <h3 class="project-title">Exam Hall Management System</h3>
+                        <p class="project-desc">A web application designed to automatically allocate seating
+                            arrangements for exams, manage invigilation schedules, and streamline hall management
+                            processes.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Web Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-icon"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-card tilt-card scroll-reveal" style="transition-delay: 200ms;">
+                    <div class="project-content">
+                        <div class="project-icon"><i class="fas fa-laptop-house"></i></div>
+                        <h3 class="project-title">Online Tutoring Platform</h3>
+                        <p class="project-desc">A conceptual platform built with the MERN stack connecting students with
+                            tutors, featuring scheduling, video integration concepts, and interactive learning boards.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-icon"><i class="fab fa-github"></i> Concept Repo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="section-container">
+            <div class="section-header scroll-reveal">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="contact-wrapper glass-card scroll-reveal">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi,
+                        I'll try my best to get back to you!</p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="icon-wrapper"><i class="fas fa-envelope"></i></div>
+                            <div class="method-details">
+                                <span class="method-label">Email</span>
+                                <a href="mailto:harinimurugesan14@gmail.com"
+                                    class="method-value">harinimurugesan14@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="icon-wrapper"><i class="fas fa-phone-alt"></i></div>
+                            <div class="method-details">
+                                <span class="method-label">Phone</span>
+                                <a href="tel:+919345304624" class="method-value">+91 9345304624</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="icon-wrapper"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="method-details">
+                                <span class="method-label">Location</span>
+                                <span class="method-value">Madurai, Tamil Nadu</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder=" ">
+                        <label for="name">Your Name</label>
+                        <div class="input-glow"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder=" ">
+                        <label for="email">Your Email</label>
+                        <div class="input-glow"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+                        <label for="message">Your Message</label>
+                        <div class="input-glow"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        <span>Send Message</span> <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <div class="form-success" id="formSuccess">Message essentially sent! (Demo mode)</div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">HM<span>.</span></div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/harini-murugesan-06856a330" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/harinimurugesan14" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:harinimurugesan14@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 Harini M. All Rights Reserved.</p>
+        </div>
+        <div class="back-to-top" id="backToTop">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+    </footer>
+
+    <!-- Vanilla Javascript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
