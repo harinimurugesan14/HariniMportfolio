@@ -1,12 +1,21 @@
-name: My First Workflow
+name: Linux Commands Workflow
 
 on:
   push:
 
 jobs:
-  hello:
+  linux-demo:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Print Message
-        run: echo "Hello Harini! GitHub Actions is working."
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Show Current Directory
+        run: pwd
+
+      - name: List Files
+        run: ls -la
+
+      - name: Show User
+        run: whoami
