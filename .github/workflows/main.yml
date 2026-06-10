@@ -11,11 +11,17 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
+      - name: Show Date
+        run: date
+
       - name: Show Current Directory
         run: pwd
 
       - name: List Files
-        run: ls -la
+        run: ls
 
       - name: Show User
         run: whoami
+
+      - name: Print Message
+        run: echo "DevOps Learning in Progress"
