@@ -1,27 +1,15 @@
-name: Linux Commands Workflow
+name: Docker Build Workflow
 
 on:
   push:
 
 jobs:
-  linux-demo:
+  docker-build:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Show Date
-        run: date
-
-      - name: Show Current Directory
-        run: pwd
-
-      - name: List Files
-        run: ls
-
-      - name: Show User
-        run: whoami
-
-      - name: Print Message
-        run: echo "DevOps Learning in Progress"
+      - name: Build Docker Image
+        run: docker build -t portfolio-app .
