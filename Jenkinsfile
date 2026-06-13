@@ -5,13 +5,21 @@ pipeline {
 
         stage('Build') {
             steps {
-                echo 'Building Portfolio Project'
+                sh 'pwd'
+                sh 'ls'
             }
         }
 
         stage('Test') {
             steps {
-                echo 'Testing Portfolio Project'
+                sh 'whoami'
+                sh 'date'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo 'Deploy Stage Executed'
             }
         }
     }
