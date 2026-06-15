@@ -5,21 +5,21 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'pwd'
+                echo 'Building Portfolio Website'
                 sh 'ls'
             }
         }
 
         stage('Test') {
             steps {
-                sh 'whoami'
-                sh 'date'
+                echo 'Testing Portfolio Website'
+                sh 'pwd'
             }
         }
 
         stage('Deploy') {
             steps {
-                echo 'Deploy Stage Executed'
+                echo 'Deploying Portfolio Website'
             }
         }
     }
@@ -27,6 +27,14 @@ pipeline {
     post {
         always {
             echo 'Pipeline Finished'
+        }
+
+        success {
+            echo 'Build Successful'
+        }
+
+        failure {
+            echo 'Build Failed'
         }
     }
 }
