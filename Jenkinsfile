@@ -19,7 +19,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                sh 'kubectl get pods'
+                echo 'Deploying Portfolio Website'
             }
         }
     }
