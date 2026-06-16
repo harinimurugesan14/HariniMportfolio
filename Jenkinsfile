@@ -10,10 +10,9 @@ pipeline {
             }
         }
 
-        stage('Test') {
+        stage('Docker Check') {
             steps {
-                echo 'Testing Portfolio Website'
-                sh 'pwd'
+                sh 'docker --version'
             }
         }
 
