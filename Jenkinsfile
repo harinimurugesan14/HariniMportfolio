@@ -5,21 +5,21 @@ pipeline {
 
         stage('Build') {
             steps {
-                echo 'Building Portfolio Website'
+                echo 'Building Portfolio'
                 sh 'ls'
             }
         }
 
-        stage('Test') {
+        stage('Docker Test') {
             steps {
-                echo 'Testing Portfolio Website'
-                sh 'pwd'
+                sh 'docker --version'
+                sh 'docker ps'
             }
         }
 
         stage('Deploy') {
             steps {
-                echo 'Deploying Portfolio Website'
+                echo 'Deploy Stage'
             }
         }
     }
