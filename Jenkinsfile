@@ -1,40 +1,48 @@
 pipeline {
-    agent any
+agent any
 
-    stages {
+```
+stages {
 
-        stage('Build') {
-            steps {
-                echo 'Building Portfolio'
-                sh 'ls'
-            }
-        }
-
-        stage('Docker Test') {
-            steps {
-                sh 'docker --version'
-                sh 'docker ps'
-            }
-        }
-
-        stage('Deploy') {
-            steps {
-                echo 'Deploy Stage'
-            }
+    stage('Build') {
+        steps {
+            echo 'Building Portfolio'
+            sh 'ls'
         }
     }
 
-    post {
-        always {
-            echo 'Pipeline Finished'
-        }
-
-        success {
-            echo 'Build Successful'
-        }
-
-        failure {
-            echo 'Build Failed'
+    stage('Docker Build') {
+        steps {
+            sh 'docker build -t harinimurugesan14/harini-portfolio:v2 .'
         }
     }
+
+    stage('Docker Images') {
+        steps {
+            sh 'docker images'
+        }
+    }
+
+    stage('Deploy') {
+        steps {
+            echo 'Deploy Stage'
+        }
+    }
+}
+
+post {
+    always {
+        echo 'Pipeline Finished'
+    }
+
+    success {
+        echo 'Build Successful'
+    }
+
+    failure {
+        echo 'Build Failed'
+    }
+}
+```
+
 }
