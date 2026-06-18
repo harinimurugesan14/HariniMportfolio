@@ -16,13 +16,7 @@ pipeline {
             }
         }
 
-        stage('Docker Images') {
-            steps {
-                sh 'docker images'
-            }
-        }
-
-        stage('Docker Push') {
+        stage('Docker Push Test') {
             steps {
                 withCredentials([usernamePassword(
                     credentialsId: 'dockerhub',
@@ -30,8 +24,8 @@ pipeline {
                     passwordVariable: 'DOCKER_PASS'
                 )]) {
                     sh '''
-                    echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin
-                    docker push harinimurugesan14/harini-portfolio:v2
+                    echo "Username=$DOCKER_USER"
+                    echo "Password length=${#DOCKER_PASS}"
                     '''
                 }
             }
