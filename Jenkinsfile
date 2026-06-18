@@ -22,6 +22,12 @@ pipeline {
             }
         }
 
+        stage('Docker Push') {
+            steps {
+                sh 'docker push harinimurugesan14/harini-portfolio:v2'
+            }
+        }
+
         stage('Deploy') {
             steps {
                 echo 'Deploy Stage'
