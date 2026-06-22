@@ -13,7 +13,7 @@ stages {
 
     stage('Docker Build') {
         steps {
-            sh 'docker build -t harinimurugesan14/harini-portfolio:v2 .'
+            sh "docker build -t harinimurugesan14/harini-portfolio:v${BUILD_NUMBER} ."
         }
     }
 
@@ -25,13 +25,13 @@ stages {
 
     stage('Docker Push') {
         steps {
-            sh 'docker push harinimurugesan14/harini-portfolio:v2'
+            sh "docker push harinimurugesan14/harini-portfolio:v${BUILD_NUMBER}"
         }
     }
 
     stage('Deploy') {
         steps {
-            echo 'Deploy Stage'
+            echo "Deploying version v${BUILD_NUMBER}"
         }
     }
 }
@@ -52,3 +52,4 @@ post {
 
 
 }
+
