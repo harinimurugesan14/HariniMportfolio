@@ -31,7 +31,12 @@ stages {
 
     stage('Deploy') {
         steps {
-            echo "Deploying version v${BUILD_NUMBER}"
+            sh """
+            kubectl set image deployment/portfolio-deployment \
+            portfolio-container=harinimurugesan14/harini-portfolio:v${BUILD_NUMBER}
+
+            kubectl rollout status deployment/portfolio-deployment
+            """
         }
     }
 }
