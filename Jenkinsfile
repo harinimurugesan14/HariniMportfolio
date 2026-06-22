@@ -32,6 +32,10 @@ stages {
     stage('Deploy') {
         steps {
             sh """
+            export KUBECONFIG=/root/.kube/config
+
+            kubectl get nodes
+
             kubectl set image deployment/portfolio-deployment \
             portfolio-container=harinimurugesan14/harini-portfolio:v${BUILD_NUMBER}
 
@@ -57,4 +61,5 @@ post {
 
 
 }
+
 
