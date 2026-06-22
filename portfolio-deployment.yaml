@@ -19,6 +19,6 @@ spec:
     spec:
       containers:
       - name: portfolio-container
-        image: harinimurugesan14/harini-portfolio:v1
+        image: harinimurugesan14/harini-portfolio:v2
         ports:
         - containerPort: 80
