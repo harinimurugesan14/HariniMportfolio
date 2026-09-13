@@ -1,6 +1,10 @@
+@"
 venv/
 __pycache__/
 *.pyc
 .env
 .env.*
 .vscode/
+node_modules/
+ract-first/node_modules/
+"@ | Set-Content .gitignore
